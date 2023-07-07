@@ -40,4 +40,13 @@ body {
   100% { opacity: 0; }
 }
 
+#musicController {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  z-index: 10000;
+  color: white;
+  font-size: 30px;
+  cursor: pointer;
+}
 

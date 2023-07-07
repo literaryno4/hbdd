@@ -4,11 +4,20 @@
         <title>Happy Birthday, Dingding!</title>
         <link rel="stylesheet" type="text/css" href="styles.css">
         <script src="script.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     </head>
     <body>
         <div class="container">
             <h1 id="greeting">Happy Birthday to Dingding!</h1>
         </div>
+        <div id="musicController">
+            <i id="playButton" class="fas fa-play" onclick="toggleMusic()" style="display:none;"></i>
+            <i id="pauseButton" class="fas fa-pause" onclick="toggleMusic()" style="display:block;"></i>
+        </div>        
+        <audio id="bgMusic" autoplay loop>
+          <source src="bgm/birthday-song.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
     </body>
 </html>
 
