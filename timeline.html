@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Our Timeline</title>
+  <link rel="stylesheet" href="timeline.css">
+  <script src="timeline.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <!-- BGM -->
+  <div id="musicController">
+    <i id="playButton" class="fas fa-play" onclick="toggleMusic()" style="display:none;"></i>
+    <i id="pauseButton" class="fas fa-pause" onclick="toggleMusic()" style="display:block;"></i>
+  </div>
+  <audio id="bgMusic" autoplay loop>
+    <source src="bgm/birthday-song.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+  <div class="timeline">
+    <div class="event">
+      <div class="content">
+        <h3><i class="fas fa-calendar-alt"></i> 2019年11月10日 - 表白, 恋爱伊始</h3>
+        <p><i class="fas fa-map-marker-alt"></i> 栖霞山, 南京</p>
+        <img src="photos/img1.jpg" alt="Our first date photo" style="width:100%;max-width:300px;">
+        <p>On this day, we went out on our first date. We had a fantastic time exploring the city, laughing, and getting
+          to know each other better.</p>
+      </div>
+    </div>
+    <!-- More events go here -->
+    <div class="event">
+      <div class="content">
+        <h3><i class="fas fa-calendar-alt"></i> 2019年11月23日 - 约会 </h3>
+        <p><i class="fas fa-map-marker-alt"></i> 先锋书店, 南京</p>
+        <img src="photos/191123-1.jpeg" alt="Our first date photo" style="width:100%;max-width:300px;">
+        <img src="photos/191123-2.jpeg" alt="Our first date photo" style="width:100%;max-width:300px;">
+        <p> 第一次去书店约会, 文艺, 和谐, 美好. 后面还去了南京的晓书馆, 还记得吗? </p>
+      </div>
+    </div>
+    <div class="event">
+      <div class="content">
+        <h3><i class="fas fa-calendar-alt"></i> 2020年1月 - 第一次异地 </h3>
+        <p><i class="fas fa-map-marker-alt"></i> 四川 && 南京</p>
+        <img src="photos/200101.jpeg" alt="Our first date photo" style="width:100%;max-width:300px;">
+        <p> 这是异地时宝宝发的美照, 本来2月就能再见面, 结果疫情开始了, 暂停了全国, 只能睹照思人😭 </p>
+      </div>
+    </div>
+    <div class="event">
+      <div class="content">
+        <h3><i class="fas fa-calendar-alt"></i> 2020年04月 - 南京相会 </h3>
+        <p><i class="fas fa-map-marker-alt"></i> 下马坊，南京</p>
+        <img src="photos/200419-ticket.jpeg" alt="Our first date photo" style="width:100%;max-width:300px;">
+        <p> 相隔三个月, 疫情好转, 终于能来南京与所爱之人相见, 此后五个月, 我们都在南京! </p>
+      </div>
+    </div>
+    <div class="event">
+      <div class="content">
+        <h3><i class="fas fa-calendar-alt"></i> 2020年05月 - 住在紫金山下 </h3>
+        <p><i class="fas fa-map-marker-alt"></i> 森林摩尔, 南京</p>
+        <img src="photos/200517.jpeg" alt="Our first date photo" style="width:100%;max-width:300px;">
+        <p> 这是在森林摩尔的奶茶店, 还记得我们傍晚一起在紫金山下漫步吗?  </p>
+      </div>
+    </div>
+    <div class="event">
+      <div class="content">
+        <h3><i class="fas fa-calendar-alt"></i> 2020年06月 - 一起爬山 </h3>
+        <p><i class="fas fa-map-marker-alt"></i> 紫金山, 南京</p>
+        <img src="photos/200601-1.jpeg" alt="Our first date photo" style="width:100%;max-width:300px;">
+        <img src="photos/200601-2.jpeg" alt="Our first date photo" style="width:100%;max-width:300px;">
+        <p> 我们好多美好的回忆都与紫金山相关, 当然我们也爬了好多次紫金山, 第一次是天文台, 第二次是主锋. 还记得登高望远, 目力所及的风景吗? </p>
+      </div>
+    </div>
+    <div class="event">
+      <div class="content">
+        <h3><i class="fas fa-calendar-alt"></i> 2020年08月 - 等你下班 </h3>
+        <p><i class="fas fa-map-marker-alt"></i> 金马路, 南京</p>
+        <img src="photos/200901.jpeg" alt="Our first date photo" style="width:100%;max-width:300px;">
+        <p> 还记得这条路吗? 从七月到九月我们住在金马路, 你公司旁, 这是下午我去接你下班的照片. </p>
+      </div>
+    </div>
+    <div class="event">
+      <div class="content">
+        <h3><i class="fas fa-calendar-alt"></i> 2020年09月 - 分别 </h3>
+        <p><i class="fas fa-map-marker-alt"></i> 南京 -> 西安 </p>
+        <p> 我去西安读研究生, 暂时的分别只为更美好的相见. 但异地真的好难熬... </p>
+      </div>
+    </div>
+    <div class="event">
+      <div class="content">
+        <h3><i class="fas fa-calendar-alt"></i> 2020年11月10日 - 恋爱一周年 </h3>
+        <p><i class="fas fa-map-marker-alt"></i> 玄武湖, 南京</p>
+        <img src="photos/201109-ticket.jpeg" alt="Our first date photo" style="width:100%;max-width:300px;">
+        <img src="photos/201109-1.jpeg" alt="Our first date photo" style="width:100%;max-width:300px;">
+        <p> 第一次从西安来南京看宝宝, 住在玄武湖边的民宿, 一起看湖景、夜色！ </p>
+      </div>
+    </div>
+    <div class="event">
+      <div class="content">
+        <h3><i class="fas fa-calendar-alt"></i> 2021年2月 - 重庆相会 </h3>
+        <p><i class="fas fa-map-marker-alt"></i> 朝天门, 重庆</p>
+        <img src="photos/210217-1.jpeg" alt="Our first date photo" style="width:100%;max-width:300px;">
+        <img src="photos/210217-2.jpeg" alt="Our first date photo" style="width:100%;max-width:300px;">
+        <p> 宝宝第一次出远门，一起逛重庆。 </p>
+      </div>
+    </div>
+    <div class="event">
+      <div class="content">
+        <h3><i class="fas fa-calendar-alt"></i> 2021年4月 - 清明相会 </h3>
+        <p><i class="fas fa-map-marker-alt"></i> 南京 </p>
+        <img src="photos/210403-ticket.jpeg" alt="Our first date photo" style="width:100%;max-width:300px;">
+        <p> 此处应该有照片，平时拍太少了，桌几。 </p>
+      </div>
+    </div>
+    <div class="event">
+      <div class="content">
+        <h3><i class="fas fa-calendar-alt"></i> 2021年11月10日 - 恋爱两周年 </h3>
+        <p><i class="fas fa-map-marker-alt"></i> 南京 && 北京 </p>
+        <img src="photos/paofu-1.jpg" alt="Our first date photo" style="width:100%;max-width:300px;">
+        <img src="photos/paofu-2.jpg" alt="Our first date photo" style="width:100%;max-width:300px;">
+        <img src="photos/paofu-3.jpg" alt="Our first date photo" style="width:100%;max-width:300px;">
+        <p> 这一年我们聚少离多，差点就分开了，但好在坚持了下来，经过这一年的至暗时刻，后面我们更加了解对方了，感情也进一步加深了。 感谢小女明星出镜~ </p>
+      </div>
+    </div>
+    <div class="event">
+      <div class="content">
+        <h3><i class="fas fa-calendar-alt"></i> 2021年12月 - 再会南京 </h3>
+        <p><i class="fas fa-map-marker-alt"></i> 马群, 南京</p>
+        <img src="photos/200419-1.jpeg" alt="Our first date photo" style="width:100%;max-width:300px;">
+        <img src="photos/200419-2.jpeg" alt="Our first date photo" style="width:100%;max-width:300px;">
+        <p> 经过别离，疫情封控，大半年不见，我终于有机会从北京来西安看宝宝了！ </p>
+      </div>
+    </div>
+    <div class="event">
+      <div class="content">
+        <h3>November 10, 2019</h3>
+        <p>Our first meeting. It was a beautiful day.</p>
+      </div>
+    </div>
+    <div class="event">
+      <div class="content">
+        <h3>November 10, 2019</h3>
+        <p>Our first meeting. It was a beautiful day.</p>
+      </div>
+    </div>
+    <div class="event">
+      <div class="content">
+        <h3>November 10, 2019</h3>
+        <p>Our first meeting. It was a beautiful day.</p>
+      </div>
+    </div>
+    <div class="event">
+      <div class="content">
+        <h3>November 10, 2019</h3>
+        <p>Our first meeting. It was a beautiful day.</p>
+      </div>
+    </div>
+    <div class="event">
+      <div class="content">
+        <h3>November 10, 2019</h3>
+        <p>Our first meeting. It was a beautiful day.</p>
+      </div>
+    </div>
+    <div class="event">
+      <div class="content">
+        <h3>November 10, 2019</h3>
+        <p>Our first meeting. It was a beautiful day.</p>
+      </div>
+    </div>
+    <div class="event">
+      <div class="content">
+        <h3>July 15, 2023</h3>
+        <p>Today, celebrating your birthday. I'm so happy to be with you.</p>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,91 @@
+body {
+  background-color: #ff99cc;
+  font-family: Arial, sans-serif;
+  color: white;
+  margin: 0;
+  padding: 20px;
+}
+
+.timeline {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: white;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+.event {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+
+.event::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  background-color: white;
+  border: 4px solid #ff99cc;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.event h3 {
+  color: white;
+}
+
+.event p {
+  margin-top: 10px;
+  color: white;
+}
+
+/* Place events on alternating sides of the timeline */
+.event:nth-child(even) {
+  margin-left: 50%;
+}
+
+.event:nth-child(even)::after {
+  left: -3%;
+}
+
+.event:nth-child(odd) {
+  margin-left: 0;
+}
+
+.event:nth-child(odd)::after {
+  right: 13%;
+}
+
+.event:nth-child(even) .content {
+  text-align: right;
+}
+
+.event:nth-child(odd) .content {
+  text-align: left;
+}
+
+.content {
+  width: 80%; /* Adjust this value to change how soon text wraps to the next line */
+}
+
+#musicController {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  z-index: 10000;
+  color: white;
+  font-size: 30px;
+  cursor: pointer;
+}
