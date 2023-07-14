@@ -7,12 +7,13 @@ window.onload = function() {
 };
 
 var messages = [
-  "You're the best!",
-  "Have a wonderful day!",
-  "Wishing you all the happiness your holiday can hold!",
-  "May your year be filled with joy and love!",
-  "Have an unforgettable birthday!",
-  "Here's to a fabulous birthday!"
+  "宝宝最棒！",
+  "宝宝最美！",
+  "生日快乐!",
+  "永远18岁！",
+  "永远开心",
+  "无忧无虑",
+  "美貌与智慧并存！"
 ];
 
 function displayRandomMessage(event) {
